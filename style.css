@@ -1,0 +1,59 @@
+/* General styles */
+
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 20px;
+}
+
+header{
+     font-size: 70px;
+     margin: 0 auto;
+     color: white;
+     padding-left: 0.6em;
+     padding-top: 1em;
+}
+
+body {
+    margin: 0 auto;
+   
+}
+
+/*+++ bagian styles yang lebih spesifik +++*/
+
+/* header dan footer */
+
+header, footer {
+    background-color: rgb(243, 186, 212);
+
+}
+
+h1, footer p {
+    margin: 10px;
+}
+
+h1 {
+    text-align: left;
+    padding-bottom: 0.5em;
+    font-size: 60px;
+}
+
+/* main content */
+main {
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+img {
+    width: 17em;
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    align-self: flex-end;
+    padding: 2em;
+    height: 2em;
+}
