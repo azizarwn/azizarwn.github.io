@@ -1,59 +1,73 @@
-/* General styles */
-
 html {
-    font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 20px;
-}
-
-header{
-     font-size: 70px;
-     margin: 0 auto;
-     color: white;
-     padding-left: 0.6em;
-     padding-top: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
 }
 
 body {
     margin: 0 auto;
-   
 }
 
-/*+++ bagian styles yang lebih spesifik +++*/
-
-/* header dan footer */
-
-header, footer {
-    background-color: rgb(243, 186, 212);
-
+header {
+    background-color: rgb(236, 184, 210);
+    margin: 0 auto;
+    font-size: 3em;
+    color: whitesmoke;
+    padding: 2em 0 0.2em 2.5em;
 }
 
-h1, footer p {
-    margin: 10px;
+.pic-hi {
+    float: center;
+    height: 4.5em;
+    padding: 0 5em 0 2em;
+}
+
+.intro-container {
+    padding: 0.1em 0 0.2em 6.5em;
+}
+
+.intro-container p {
+    font-size: 8vh;
+    margin-top: 1vh;
+
 }
 
 h1 {
-    text-align: left;
-    padding-bottom: 0.5em;
-    font-size: 60px;
+    margin-top: 0.1em;
+    margin-bottom: 0.2em;
+    font-size: 4em;
 }
 
-/* main content */
-main {
-    padding-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+.content-container {
+    margin-left: 3em;
 }
 
-
-img {
-    width: 17em;
-    float: left;
-    margin-right: 20px;
-}
-
-footer {
+.about-me {
     display: flex;
-    align-self: flex-end;
-    padding: 2em;
-    height: 2em;
+}
+
+.pic-bio {
+    height: 20em;
+    padding: 0.5em 0 0 1em;
+    border-radius: 4em;
+}
+
+.about-me p {
+    margin: 0.5em 3em 0em 1em;
+    font-size: 4vh;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.contact-me a {
+    margin: 0 0 0 1em;
+    font-size: 48px;
+    color: rgb(224, 119, 137);
+}
+
+
+footer  {
+    background-color: rgb(236, 184, 210);
+    height: 5em;
+    padding: 1em 2em;
+    margin-top: 1em;
 }
