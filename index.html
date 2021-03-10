@@ -1,78 +1,151 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aziza's Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fc4980bc4f.js" crossorigin="anonymous"></script>
+    <title>Aziza's Page</title>
 </head>
 <body>
-    
-        <header>Hello, I am
-            <img class="pic-hi" src="hi-tiger.png" alt="hi everyone">
-        </header>
-        
-    <div>
-        <main>
-            <div class="intro-container">
-                <h1>Aziza Az Zahrawani</h1>
-                <p>and you can call me Ziza.</p>
+
+    <header>
+       <div class="container-{breakpoint}">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="index.html" 
+                              style="color: white; font-weight: 700;">
+                              About Me</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link" href="contact.html" 
+                           style="color: white; font-weight: 200;">
+                           Contact Me</a>
+                           </li>
+                      </ul>
+                  </div>
+              </div>
+            </nav>
+      </div>
+
+      <div class="container-fluid  header-hi">
+        <h2>Hello, I am</h2>
+        <img src="hand.png" class="float-end hi-hand" alt="Hi" >
+      </div>
+
+      <div class="container name-aziza">
+        <h1>Aziza Az Zahrawani</h1>
+        <h3>and you can call me Ziza.</h3>
+      </div>
+      <br><br>
+    </header>
+
+    <main>
+      <br><br>
+      <div class="container main-content">
+        <div id="carouselExampleIndicators" class="carousel slide slide-pic" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img src="pic.jpg" class="d-block w-100" alt="1" style="border-radius: 1em;">
             </div>
-
-            <div class="content-container">
-                <div  class="about-me">
-                    <div>
-                        <img class="pic-bio" src="pic.jpg" alt="My Picture">
-                    </div>
-                    
-                    <div>
-                        <p> I was born on July, 24th 1998 in Pati, Central Java. 
-                            <br> In September 2020, I graduated from State Polytechnic of Batam. I'm a Glints Academy 
-                            Student based in Batam City. Currently, I'm learning about HTML, CSS, Javascript and 
-                            I want to get closer to programming because I realized it's really fun playing with it. 
-                            My goal is to be a Professional Front End Developer. I enjoy travelling to a new place 
-                            and when I'm just staying at home I'll be marathons on my Netflix or cuddling my cats. 
-                            Feel free to get in touch with me.
-                        </p><br>
-                        
-                        <div class="contact-me">
-                            <a href="https://www.linkedin.com/in/aziza-az-zahrawani-1a524a1b9/">
-                                <i class="fab fa-linkedin-in"></i></a>
-
-                            <a href="https://www.instagram.com/azizaazhrwn/">
-                                <i class="fab fa-instagram"></i></a>
-
-                            <a href="https://twitter.com/azizaraw">
-                                <i class="fab fa-twitter"></i></a>
-                            
-                            <a href="https://github.com/azizarwn">
-                                <i class="fab fa-github"></i></a>
-                            
-                            <a href="https://gitlab.com/azizarwn">
-                                <i class="fab fa-gitlab"></i></a>
-                            
-    
-                            
-                        </div>              
-                                               
-                        </div>
-                    </div>
-                </div>
-
-                
-
+            <div class="carousel-item">
+              <img src="pic2.jpg" class="d-block w-100" alt="2" style="border-radius: 1em;">
             </div>
-        </main>
+            <div class="carousel-item">
+              <img src="pic3.jpg" class="d-block w-100" alt="3" style="border-radius: 1em;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="container main-bio">
+          <p> I was born on July, 24th 1998 in Pati, Central Java. 
+            In September 2020, I graduated from State Polytechnic of Batam. I'm a Glints Academy 
+            Student based in Batam City. Currently, I'm learning about HTML, CSS, Javascript and 
+            I want to get closer to programming because I realized it's really fun playing with it. 
+            My goal is to be a Professional Front End Developer. I enjoy travelling to a new place 
+            and when I'm just staying at home I'll be marathons on my Netflix or cuddling my cats. 
+            Feel free to get in touch with me or go to Contact Me Page to send message directly.
+        </p>
+        <div class="container contact-me">
+          <a href="https://www.linkedin.com/in/aziza-az-zahrawani-1a524a1b9/">
+              <i class="fab fa-linkedin-in"></i></a>
+
+          <a href="https://www.instagram.com/azizaazhrwn/">
+              <i class="fab fa-instagram"></i></a>
+
+          <a href="https://twitter.com/azizaraw">
+              <i class="fab fa-twitter"></i></a>
+          
+          <a href="https://github.com/azizarwn">
+              <i class="fab fa-github"></i></a>
+          
+          <a href="https://gitlab.com/azizarwn">
+              <i class="fab fa-gitlab"></i></a>
+      </div>
+     </div>
     </div>
+    <br><br><br>
 
-    <div>
-        <footer>
-            <p>&copy; 2021Aziza</p>
-        </footer>
-    </div>  
- 
+    <div class="container card-item">
+      <div class="card" style="width: 18rem;">
+        <a href="https://drive.google.com/file/d/1ozG4KG-EH-U1j7sv22mQGC4voSU_kR9-/view?usp=sharing">
+          <img src="card1.jpg" class="card-img-top" alt="Photograph">
+        </a>
+        <div class="card-body">
+          <p class="card-text">My Last Photography Project in Borobudur Temple. 
+            Click in the picture to see the detailed project.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="https://drive.google.com/file/d/1X4s3zOFfbZfcmDma5D3PVu6P_VgHk6tr/view?usp=sharing">
+          <img src="card2.jpg" class="card-img-top" alt="Videograph">
+        </a>
+        <div class="card-body">
+          <p class="card-text">One of My Videography projects is Dekade short movie.
+             It nominated for the 3rd best fiction short movie in Polibatam film festival 2018.
+             Click in the picture to see the detailed project.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="https://drive.google.com/file/d/1cwrsGG6vCxdHOs4N2F4g9lVQBsbSpTcc/view?usp=sharing">
+          <img src="card3.jpg" class="card-img-top" alt="Animation">
+        </a>
+        <div class="card-body">
+          <p class="card-text">It's my animation film project featuring Polibatam Team about 
+            Posyandu socialization for pregnant women. Click in the picture to see the detailed project.</p>
+        </div>
+      </div>
+
+    </div>
+      <br><br>
+    </main>
+
+    <div class="container-{breakpoint} footer" style="height: 5em;">
+      <p class="h6">Copyright &copy; 2021 Aziza</p>
+    </div>
+    
 </body>
 </html>

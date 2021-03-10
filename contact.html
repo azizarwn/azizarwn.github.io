@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aziza's Page</title>
+</head>
+<body class="bg-img">
+
+    <div class="container-{breakpoint} bg-contact">
+        
+        <header>
+            <div class="container-{breakpoint} header-nav">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: palevioletred;">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                 <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="index.html" 
+                                    style="color: white; font-weight: 200;">
+                                    About Me</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link" href="contact.html" 
+                                 style="color: white; font-weight: 700;">
+                                 Contact Me</a>
+                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+        <br><br>
+        <main class="container" style="width: 50%; margin-left: 10%;">
+           <form>
+            <div class="mb-3">
+                <label for="first-name" class="name-label">First Name</label>
+                <input type="text" class="form-control" placeholder="Example : Hermione" id="first-name" aria-label="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="name-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Example : Granger" id="last-name" aria-label="last-name">
+              </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" placeholder="Example : msgranger@gmail.com" id="email" aria-describedby="email">
+                <div id="email" class="form-text" style="color: black">I'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="message-tome" class="form-label">Your Message</label>
+                <textarea class="form-control" placeholder=" Hi Aziza," id="message" rows="3"></textarea>
+              </div>
+           </form>
+            
+           <div>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"> 
+            <label class="btn btn-outline-success" for="success-outlined" 
+            style="width: 100%; background-color: rgb(241, 150, 181); border-color: palevioletred;
+            color: white; font-weight: 1000;">Submit</label> 
+           </div>
+            
+        </main>
+
+    </div>
+    <br>
+    <div class="container-{breakpoint} footer" style="height: 3.6em;">
+        <p class="h6">Copyright &copy; 2021 Aziza</p>
+    </div>
+    
+    
+</body>
+</html>
