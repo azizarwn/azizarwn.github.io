@@ -1,5 +1,6 @@
 .header-hi {
     display: flex;
+    align-items: flex-end;
     height: 23rem;
     background-color: palevioletred;
     
@@ -7,14 +8,14 @@
 
 .header-hi h2 {
     font-size: 4em;
-    padding: 21% 0 0 18%;
+    padding-left: 37vh;
     color: white;
 }
 
 .hi-hand {
-    height: 30%;
-    margin-top: 19.45%;
-    padding: 0 0 0 2%;
+    /* height: 30%;
+    margin-top: 19.45%; */
+    /* padding: 20% 0 0 2%; */
     
 }
 
