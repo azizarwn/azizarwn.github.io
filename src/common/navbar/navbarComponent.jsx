@@ -39,6 +39,13 @@ const NavbarComponent = () => {
 							<Link
 								className="nav-item nav-link tab-nav"
 								style={{ color: "#2B495D" }}
+								to="/blog"
+							>
+								Blog
+							</Link>
+							<Link
+								className="nav-item nav-link tab-nav"
+								style={{ color: "#2B495D" }}
 								to="/contact"
 							>
 								Contact

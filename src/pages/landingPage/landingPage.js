@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./landing.scss";
-import { Container } from "react-bootstrap";
-import AzizaPic from "../../assets/shape-aziza-ok.png"
+import { Container, Button } from "react-bootstrap";
+import AzizaPic from "../../assets/shape-aziza-ok.png";
 import FooterComp from "../../common/footer/footerComp";
 import NavbarComponent from "../../common/navbar/navbarComponent";
 
 const LandingPage = () => {
 	return (
 		<div className="cover">
-            <NavbarComponent/>
+			<NavbarComponent />
 			<Container>
 				<div className="cover-landing">
 					<div className="cover-text">
@@ -19,10 +20,17 @@ const LandingPage = () => {
 								data-icon="emojione-waving-hand"
 								data-inline="false"
 							></span>{" "}
-							Hi there, I am
+							Hi there,
 						</div>
-						<div className="name">Aziza Az Zahrawani</div>
-						<div>and I am a front-end enthusiast based in Batam, Indonesia.</div>
+						<div className="name">I am Aziza</div>
+						<div>
+							and I am a front-end enthusiast based in Batam, Indonesia.
+						</div>
+						<Link to="/about-me">
+							<Button variant="light" className="aziza">
+								Who is Aziza?
+							</Button>
+						</Link>
 					</div>
 					<div className="cover-pic">
 						<img className="pic" src={AzizaPic} alt="pic" />

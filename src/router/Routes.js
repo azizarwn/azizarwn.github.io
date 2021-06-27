@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutMe from '../pages/aboutMePage/aboutMe';
+import BlogPage from '../pages/blog/blog';
 import ContactPage from '../pages/contact/contact';
 import Landing from '../pages/landingPage/landingPage'
 import ProjectPage from '../pages/projectPage/project';
@@ -20,6 +21,9 @@ const Routes = () => {
           </Route>
           <Route path="/contact" exact>
             <ContactPage/>
+          </Route>
+          <Route path="/blog" exact>
+            <BlogPage/>
           </Route>
         </Switch>
       </Router>

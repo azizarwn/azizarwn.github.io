@@ -7,12 +7,18 @@ import FooterComp from "../../common/footer/footerComp";
 const AboutMe = () => {
 	return (
 		<div>
-            <NavbarComponent/>
-			<Container className="about-me">
-				This page still in progress. I can't wait to show you as soon as
-				possible. See you soon.
+			<NavbarComponent />
+			<Container>
+				<div className="about-me">
+					Hi, nice to meet you. My Name is Aziza Az Zahrawani. In September
+					2020, I graduated from State Polytechnic of Batam majoring in
+					Multimedia and Networking. After graduation, I realized that staying
+					in a comfort zone would make me out of date. Then I take a challenge
+					and start my journey at Glints Academy as a Front-end Developer
+					Student.
+				</div>
 			</Container>
-            <FooterComp/>
+			<FooterComp />
 		</div>
 	);
 };
