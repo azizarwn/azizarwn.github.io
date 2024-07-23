@@ -23,7 +23,7 @@ const LandingPage = () => {
 							Hi there,
 						</div>
 						<div className="name">I am Aziza</div>
-						<div>
+						<div className="desc">
 							and I am a front-end enthusiast based in Batam, Indonesia.
 						</div>
 						<Link to="/about-me">
