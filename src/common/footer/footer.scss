@@ -1,9 +1,9 @@
 .footer {
-	background-color: #f1d1b5;
-    color: #305F72;
+	background-color: var(--primary-2);
+    color: var(--primary-1);
 	height: 2.5rem;
     width: 100vw;
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     display: flex;
     align-items: center;

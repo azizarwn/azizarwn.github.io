@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutMe from '../pages/aboutMePage/aboutMe';
 import BlogPage from '../pages/blog/blog';
 import ContactPage from '../pages/contact/contact';
-import Landing from '../pages/landingPage/landingPage'
 import ProjectPage from '../pages/projectPage/project';
+import LandingPage from '../pages/landingPage';
 
 const Routes = () => {
     return (
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Landing/>
+            <LandingPage/>
           </Route>
           <Route path="/about-me" exact>
             <AboutMe/>

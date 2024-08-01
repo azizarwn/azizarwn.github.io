@@ -1,61 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-	Container,
-	Nav,
-	Navbar,
-} from "react-bootstrap";
-import './navbarComponent.scss'
+import { Container, Nav, Navbar } from "react-bootstrap";
+import "./navbarComponent.scss";
+import clsx from "clsx";
+
+const navItem = [
+  { label: "Home", href: "/" },
+  { label: "Project", href: "/project" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" }
+];
 
 const NavbarComponent = () => {
-	return (
-		<div>
-			<Navbar collapseOnSelect expand="lg">
-				<Container className="navbar-container">
-					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-					<Navbar.Collapse id="responsive-navbar-nav">
-						<Nav className="nav-container">
-							<Link
-								className="nav-item nav-link tab-nav"
-								style={{ color: "#2B495D" }}
-								to="/"
-							>
-								Home
-							</Link>
-							<Link
-								className="nav-item nav-link tab-nav"
-								style={{ color: "#2B495D" }}
-								to="/about-me"
-							>
-								About Me
-							</Link>
-							<Link
-								className="nav-item nav-link tab-nav"
-								style={{ color: "#2B495D" }}
-								to="/project"
-							>
-								Project
-							</Link>
-							<Link
-								className="nav-item nav-link tab-nav"
-								style={{ color: "#2B495D" }}
-								to="/blog"
-							>
-								Blog
-							</Link>
-							<Link
-								className="nav-item nav-link tab-nav"
-								style={{ color: "#2B495D" }}
-								to="/contact"
-							>
-								Contact
-							</Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-		</div>
-	);
+  return (
+    <Navbar collapseOnSelect expand="lg" className="py-[30px]">
+      <Container className="navbar-container">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="ml-auto"
+        />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-center">
+          <Nav className="nav-container">
+            {navItem.map((item, i) =>
+              <Link
+                key={i}
+                className="nav-item nav-link !text-primary-2 mx-[10px] text-xl font-bold"
+                to={item.href}
+              >
+                {item.label}
+              </Link>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default NavbarComponent;

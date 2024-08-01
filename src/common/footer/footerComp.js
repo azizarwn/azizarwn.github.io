@@ -1,12 +1,14 @@
-import React from 'react'
-import './footer.scss'
+import React from "react";
+import "./footer.scss";
 
 const FooterComp = () => {
-    return (
-        <div className='footer'>
-            Copyright © 2021 Aziza
-        </div>
-    )
-}
+  // Create a new Date object for today
+  const today = new Date();
 
-export default FooterComp
+  // Get the current year
+  const currentYear = today.getFullYear();
+
+  return <div className="footer">Copyright © {currentYear} Aziza</div>;
+};
+
+export default FooterComp;
