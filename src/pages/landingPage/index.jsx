@@ -54,17 +54,27 @@ const LandingPage = () => {
               </span>
               <span className="text-xl">Years of Experience</span>
             </div>
-            <p className="sm:max-w-[400px] lg:max-w-[700px] text-lg tracking-wider">
-              Hello! I am Passionate Front-End Developer, specialize in
-              designing and developing responsive interactive websites. Adept at
-              translating design specifications into interactive web
-              applications that enhance user experiences. Proficient in HTML,
-              CSS, JavaScript, and modern frameworks such as React.js and
-              Next.js. Skilled in collaborating with back-end developers, UI/UX
-              Designer, third-party APIs, and collaborating with stakeholders to
-              create user-friendly interfaces resulting in increased user
-              engagement and customer satisfaction.
-            </p>
+            <div className="flex flex-col gap-[10px]">
+              <p className="sm:max-w-[400px] lg:max-w-[700px] text-lg tracking-wider">
+                I started learning coding when I was in university. At first, I
+                felt overwhelmed and struggled with the coding subjects. Fast
+                forward, I graduated in 2020. As a fresh graduate during the
+                pandemic, it was difficult to find a job. I realized that the IT
+                industry was in high demand at the time, so I decided to upgrade
+                my coding skills by joining a frontend bootcamp. During the 3
+                months at the bootcamp, I felt excited and exhausted at the same
+                time.
+              </p>
+              <p className="sm:max-w-[400px] lg:max-w-[700px] text-lg tracking-wider">
+                It was quite fun when I could understand my code and logic case
+                conditions. After that, I started to explore more about frontend
+                development, and I have enjoyed coding ever since. In July 2021,
+                I started my frontend career at a digital agency based in
+                Jakarta. I work closely with stakeholders and other third
+                parties to create user-friendly interfaces resulting in
+                increased user engagement and customer satisfaction.
+              </p>
+            </div>
           </div>
         </div>
         <div className="w-full bg-white text-primary-2">
@@ -79,7 +89,7 @@ const LandingPage = () => {
                   href="https://www.weekendinc.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="pointer text-lg font-bold hover:text-secondary-1"
+                  className="pointer underline decoration-1 text-lg font-bold hover:text-secondary-1"
                 >
                   Frontend Developer - WEEKEND Inc
                 </a>
